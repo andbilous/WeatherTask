@@ -7,12 +7,17 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "deps": "yarn install && bundle install && bundle exec pod install --project-directory=ios"
   },
   "dependencies": {
+    "@react-navigation/native": "^6.0.2",
+    "@react-navigation/native-stack": "^6.0.3",
     "@types/styled-components-react-native": "^5.1.1",
     "react": "17.0.1",
     "react-native": "0.64.2",
+    "react-native-safe-area-context": "^3.3.0",
+    "react-native-screens": "^3.5.0",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
